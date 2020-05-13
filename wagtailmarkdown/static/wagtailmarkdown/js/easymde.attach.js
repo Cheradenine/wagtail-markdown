@@ -10,10 +10,10 @@
  */
 
 /*
- * Used to initialize Simple MDE when Markdown blocks are used in StreamFields
+ * Used to initialize Easy MDE when Markdown blocks are used in StreamFields
  */
-function simplemdeAttach(id) {
-        var mde = new SimpleMDE({
+function easymdeAttach(id) {
+        var mde = new EasyMDE({
             element: document.getElementById(id),
             autofocus: false,
         });
@@ -25,11 +25,11 @@ function simplemdeAttach(id) {
 }
 
 /*
- * Used to initialize Simple MDE when MarkdownFields are used on a page.
+ * Used to initialize Easy MDE when MarkdownFields are used on a page.
  */
 $(document).ready(function() {
     $(".object.markdown textarea").each(function(index, elem) {
-        simplemdeAttach(elem.id);
+        easymdeAttach(elem.id);
     });
 });
 
